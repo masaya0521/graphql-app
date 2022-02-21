@@ -1,0 +1,29 @@
+# Todoのデータ保持
+type Todo {
+  id: ID!
+  text: String!
+  done: Boolean!
+  user: User!
+}
+
+# Userのデータ保持
+type User {
+  id: ID!
+  name: String!
+}
+
+# リクエストの定義(Todo作成)
+input NewTodo {
+  text: String!
+  userId: String!
+}
+
+# データ取得APIの定義
+type Query {
+  todos: [Todo!]!
+}
+
+# データ変更APIの定義
+type Mutation {
+  createTodo(input: NewTodo!): Todo!
+}
