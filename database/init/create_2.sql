@@ -1,5 +1,5 @@
 create table users (
-    id integer ,
+    id text,
     t_name text,
     primary key(id)
 );

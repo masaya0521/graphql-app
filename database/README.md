@@ -6,6 +6,11 @@ docker volume create pq_todo
 
 docker-compose up --build
 
+# postgres の中に入る
+
+docker exec -it postgre-todo bash
+psql -U postgres
+
 # 停止
 
 #docker-compose down
