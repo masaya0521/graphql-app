@@ -1,1 +1,13 @@
-# graphql-app
+# graphql使用してアプリを作成してみる
+## 技術
+- フロントエンド
+    - typescript
+    - vue.js
+    - vue-apollo
+- バックエンド
+    - golang
+    - gqlgen
+- フロント/バック間
+    - graphQL
+- DB
+    - postgres
